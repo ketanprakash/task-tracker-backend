@@ -1,20 +1,19 @@
 const { port } = require('./config/config')
-// const port = process.env.PORT;
 const express = require('express');
-// const cors = require('cors');
-// const { tasks } = require('./routes/tasks');
+const cors = require('cors');
+const { tasks } = require('./routes/tasks');
 const app = express();
 
-// app.use(cors());
-// app.use(express.json());
+app.use(cors());
+app.use(express.json());
 
-// app.use('/tasks', tasks);
+app.use('/tasks', tasks);
 
 app.get('*', (req, res) => {
   res.status(200).send(`Started Server`);
 });
 
-app.listen(process.env.PORT, (err) => {
+app.listen(port, (err) => {
   if (err) console.log("Error in server setup")
   console.log("Server listening on Port");
 })
