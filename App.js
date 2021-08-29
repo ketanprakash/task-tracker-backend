@@ -9,9 +9,9 @@ const app = express();
 
 // app.use('/tasks', tasks);
 
-// app.get('*', (req, res) => {
-//   res.status(200).send(`Started Server on port ${port}`);
-// });
+app.get('*', (req, res) => {
+  res.status(200).send(`Started Server on port ${port}`);
+});
 
 app.listen(process.env.PORT, (err) => {
   if (err) console.log("Error in server setup")
