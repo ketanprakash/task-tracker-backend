@@ -11,7 +11,7 @@ const port = process.env.PORT;
 // app.use('/tasks', tasks);
 
 app.get('*', (req, res) => {
-  res.status(200).send(`Started Server on port ${port}`);
+  res.status(200).send(`Started Server`);
 });
 
 app.listen(port, (err) => {
