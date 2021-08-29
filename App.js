@@ -1,4 +1,5 @@
-const { port } = require('./config/config')
+// const { port } = require('./config/config')
+const port = process.env.PORT;
 // const express = require('express');
 // const cors = require('cors');
 // const { tasks } = require('./routes/tasks');
