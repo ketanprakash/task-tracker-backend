@@ -7,9 +7,9 @@ const app = express();
 
 // const port = process.env.PORT || 8000;
 // // app.use(cors());
-// app.use(express.json());
+app.use(express.json());
 
-// app.use('/tasks', tasks);
+app.use('/tasks', tasks);
 
 app.get('*', (req, res) => {
   res.status(200).send(`Started Server`);
