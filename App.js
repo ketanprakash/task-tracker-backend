@@ -14,7 +14,7 @@ app.get('*', (req, res) => {
   res.status(200).send(`Started Server`);
 });
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT, (err) => {
   if (err) console.log("Error in server setup")
   console.log("Server listening on Port");
 })
