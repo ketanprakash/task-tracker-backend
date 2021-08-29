@@ -1,0 +1,27 @@
+{
+  "name": "task-tracker-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ketanprakash/task-tracker-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ketanprakash/task-tracker-backend/issues"
+  },
+  "homepage": "https://github.com/ketanprakash/task-tracker-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
