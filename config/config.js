@@ -1,4 +1,4 @@
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv');
 dotenv.config();
 const port = process.env.PORT
 const host = process.env.PGHOST
