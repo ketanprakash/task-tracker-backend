@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 module.exports = {
-  port: process.env.PORT || 8000,
+  port: process.env.PORT,
   host: process.env.PGHOST,
   user: process.env.PGUSER,
   database: process.env.PGDATABASE,
