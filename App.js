@@ -15,5 +15,5 @@ const app = express();
 
 app.listen(process.env.PORT, (err) => {
   if (err) console.log("Error in server setup")
-  console.log("Server listening on Port", PORT);
+  console.log("Server listening on Port");
 })
